@@ -1,7 +1,5 @@
-.. title: PyCamp 2016
+.. title: Fotos!
 
-Fotos!
-------
 
 El evento ya pasó, esta es alguna recopilación de fotos...
 

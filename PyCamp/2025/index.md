@@ -1,12 +1,10 @@
 
-.. title: PyCamp 2025
-
-
-### ¿Un qué?
+.. title: ¿Un qué?
 
   
   
-Antes que nada, ¿qué es un PyCamp? [Acá tenés una buena descripción y mucha info](link://post_path/PyCamp/).
+
+Antes que nada, ¿qué es un PyCamp? `Acá tenés una buena descripción y mucha info </pycamp>`_.
 
   
   
@@ -16,7 +14,7 @@ Fechas:
 
   
 
-Los días 21(laborable ), 22 y 23 (sábado y domingo) y 24 (feriado) de Marzo del 2025.
+Los dias 21(laborable ), 22 y 23 (sábado y domingo) y 24 (feriado) de Marzo del 2025.
 
   
 
@@ -29,7 +27,7 @@ Qué llevo:
 
   
 
-- Tu computadora (mejor si es portátil). Actualizada con toda la información, paquetes y datos que creas que podrías necesitar, cosa de no exigirle a la internet del lugar más de lo necesario.
+- Tu computadora (mejor si es portatil). Actualizada con toda la información, paquetes y datos que creas que podrías necesitar, cosa de no exigirle a la internet del lugar más de lo necesario.
 
   
 
@@ -50,14 +48,14 @@ Sede: Habitat Terra, Baradero, Buenos Aires
 
 **Nombre del lugar:** Hogar German Frers - Habitat Terra (datos + Fotos en el link)
 
-[Habitat Terra](http://www.habitatterra.com.ar/)
+(Habitat Terra)[http://www.habitatterra.com.ar/]
 
-Como ya fuimos a este lugar, podés ver las [fotos de la edición anterior](https://photos.app.goo.gl/wGXTYcb8fFQJWZBE6)
+Como ya fuimos a este lugar, podés ver las (fotos de la edición anterior)[https://photos.app.goo.gl/wGXTYcb8fFQJWZBE6]
 
 
 **Donde está:**
 
- * Mapa:  [Acá](https://goo.gl/maps/QoJyXWX9jHULXDF56)
+ * Mapa:  (Acá)[https://goo.gl/maps/QoJyXWX9jHULXDF56]
 
  * Distancias:
 
@@ -66,8 +64,6 @@ Como ya fuimos a este lugar, podés ver las [fotos de la edición anterior](http
    * 161 km de Rosario
 
    * 150 km de Capital Federal 
-
-   * 350 km de Paraná 
 
    * 384000 km de la luna
 
@@ -86,7 +82,7 @@ Seguramente haremos pycada y/o cerveza artesanal , pero está fuera de presupues
 
 **Detalles extras del alojamiento:**
 
-3 Habitaciones privadas con baño privado (1 base triple / 1 base cuádruple / 1 base quintuple ).
+3 Habitaciones privadas con baño privado (1 base triple / 1 base cuadruple / 1 base quintuple ).
 
 10 Habitaciones séptuples tienen baño a compartir c/duchas c/agua caliente las 24hs. Incluyen ropa
 
@@ -94,7 +90,7 @@ de cama + el libre uso (Pileta, canchas, SUM, WIFI).
 
 Es posible alojarse en el lugar un día antes del PyCamp.
 
-Unos días antes del PyCamp vamos a hacer una lista con quienes deseen venir un dia antes. Se abona en el lugar y tiene un costo _desconocido a la hora de subir esta pagina_.
+Unos dias antes del PyCamp vamos a hacer una lista con quienes deseen venir un dia antes. Se abona en el lugar y tiene un costo _desconocido a la hora de subir esta pagina_.
 
 Esto se abona directamente en el lugar, **no** lo incluyan en el pago de la inscripción.
 
@@ -102,7 +98,7 @@ Esto se abona directamente en el lugar, **no** lo incluyan en el pago de la insc
 
 Se abre oficialmente la inscripción al **PyCamp 2025**, su décima séptima edición!!! 
 
-PyCamp 2025 será en **Baradero**, del **21 al 24 de Marzo**.
+Pycamp 2025 será en **Baradero**, del **21 al 24 de Marzo**.
 
 Por complicaciones en la organización del PyCamp 2025 vamos a repetir la sede de Baradero.
 
@@ -122,7 +118,7 @@ La coordinación de todo el PyCamp (coordinación para llegar, distribución de 
 
 ## **Precio**  
 
-Contamos con el siguiente esquema de precios (les socies de AC de PyAr tienen descuentos):
+Contamos con el siguiente esquema de precios (les socies de AC de pyar tienen descuentos):
 
 ***Precios ENERO***
 
@@ -145,9 +141,9 @@ Pueden asociarse ahora mismo a Python Argentina y agarrar el PyCamp con el descu
 
 ## **Como me anoto?**
 
-Llena este [**FORMULARIO**](https://forms.gle/bjE9gPyqu6ZEjAjcA), el mismo te va a pedir datos personales y dietarios relevantes para el PyCamp. Sobre el final van a ver diferentes modos de pago y una pestaña donde podrán subir el comprobante de pago.
+Llena este [**FORMULARIO**](https://forms.gle/bjE9gPyqu6ZEjAjcA), el mismo te va a pedir datos personales y dietarios relevantes para el pycamp. Sobre el final van a ver diferentes modos de pago y una pestaña donde podrán subir el comprobante de pago.
 
-Una vez enviado el formulario nosotros lo procesamos chequeamos la información y les mandamos un mail de bienvenida al PyCamp con más información.
+Una vez enviado el formulario nosotros lo procesamos chequeamos la información y les mandamos un mail de bienvenida al pycamp con más información.
 
 ## **Cómo aplicar para becas?**
 
@@ -169,17 +165,18 @@ Habiendo dicho eso, la idea de las becas también es reforzar la diversidad, lo 
 ​
 Organizadores: 
 --------------
-- WinnaZ [@WinnaZ](https://t.me/WinnaZ)
+- WinnaZ `@WinnaZ <https://t.me/WinnaZ>`_
 
-- Facu [@facundobatista](https://t.me/facundobatista)
+- Facu `@facundobatista <https://t.me/facundobatista>`_
 
-- Lecovi [@lecovi](https://t.me/lecovi)
+- Lecovi `@lecovi <https://t.me/lecovi>`_
+
 
 
 **Con el soporte de la Asociación Civil Python Argentina.**
   
 
-Cualquier duda, tema, o lo que quieras preguntar, [mandanos un mail](mailto:pycamp@ac.python.org.ar).
+Cualquier duda, tema, o lo que quieras preguntar, `mandanos un mail <mailto:pycamp@ac.python.org.ar>`_.
 
 Proyectos Propuestos:
 ---------------------

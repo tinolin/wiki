@@ -1,7 +1,5 @@
-.. title: PyCamp 2021
+.. title: ¿Un qué?
 
-¿Un qué?
---------
 
 Antes que nada, ¿qué es un PyCamp? `Acá tenés una buena descripción y mucha info </pycamp>`_.
 

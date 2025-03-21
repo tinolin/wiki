@@ -28,7 +28,7 @@ En esta receta se muestra como:
 Crear un ejecutable (.EXE) nativo para Windows (que no requiera tener Python instalado)
 Generar un archivo autoextraible similar a un instalador (pero más ">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2025-03-14T17:10:11-03:00">
+<meta property="article:published_time" content="2025-03-21T17:56:16-03:00">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
@@ -70,7 +70,17 @@ Generar un archivo autoextraible similar a un instalador (pero más ">
                 </li>                
             </ul>
 </div>
-    </nav>
+
+    </nav><div id="search_bar">
+            <div id="search_overlay" style="display:none;">
+                <div id="search_content">
+                    <input type="text" id="search_input" placeholder="Buscar 🔎"><div id="search_count"></div>
+                    <div id="search_results"></div>
+                    <button id="boton_cerrar" onclick="closeSearch()">Cerrar (Esc)</button>
+                </div>
+            </div>
+            <input type="text" id="search_input_base" placeholder="Buscar en la wiki 🔎">
+</div>
 </div>
 
 <!-- Header and menu bar -->
@@ -104,20 +114,20 @@ Generar un archivo autoextraible similar a un instalador (pero más ">
 <li><p><a class="reference external" href="http://www.7-zip.org/">7-Zip</a> (opcional, para crear el archivo autoextraible)</p></li>
 </ul></section><section id="ejemplo"><h2>Ejemplo</h2>
 <p>Como ejemplo tomamos una aplicación simple <em>hola.py</em>:</p>
-<div class="code"><pre class="code python"><a id="rest_code_b4514312bb9e416ea56a495d394d21a9-1" name="rest_code_b4514312bb9e416ea56a495d394d21a9-1" href="#rest_code_b4514312bb9e416ea56a495d394d21a9-1"></a><span class="c1"># -*- coding: iso-8859-1 -*-</span>
-<a id="rest_code_b4514312bb9e416ea56a495d394d21a9-2" name="rest_code_b4514312bb9e416ea56a495d394d21a9-2" href="#rest_code_b4514312bb9e416ea56a495d394d21a9-2"></a>
-<a id="rest_code_b4514312bb9e416ea56a495d394d21a9-3" name="rest_code_b4514312bb9e416ea56a495d394d21a9-3" href="#rest_code_b4514312bb9e416ea56a495d394d21a9-3"></a><span class="nb">print</span> <span class="s2">"hola mundo"</span>
+<div class="code"><pre class="code python"><a id="rest_code_52c8211ff17244d0a6154bb2ed5bc948-1" name="rest_code_52c8211ff17244d0a6154bb2ed5bc948-1" href="#rest_code_52c8211ff17244d0a6154bb2ed5bc948-1"></a><span class="c1"># -*- coding: iso-8859-1 -*-</span>
+<a id="rest_code_52c8211ff17244d0a6154bb2ed5bc948-2" name="rest_code_52c8211ff17244d0a6154bb2ed5bc948-2" href="#rest_code_52c8211ff17244d0a6154bb2ed5bc948-2"></a>
+<a id="rest_code_52c8211ff17244d0a6154bb2ed5bc948-3" name="rest_code_52c8211ff17244d0a6154bb2ed5bc948-3" href="#rest_code_52c8211ff17244d0a6154bb2ed5bc948-3"></a><span class="nb">print</span> <span class="s2">"hola mundo"</span>
 </pre></div>
 </section><section id="compilando-python-con-py2exe"><h2>"Compilando" Python con Py2Exe</h2>
 <p><a class="reference external" href="../../py2exe">Py2Exe</a> empaqueta los archivos necesarios para ejecutar la aplicación sin necesitad de instalar Python ni sus dependencias.</p>
 <p>Para crear el ejecutable es necesario crear un script de setup que extiende las utilidades de distribución de python (<a class="reference external" href="../../distutils">DistUtils</a>), <em>setup.py</em>:</p>
-<div class="code"><pre class="code python"><a id="rest_code_65893360e74e4d849ae7ab67ecc37713-1" name="rest_code_65893360e74e4d849ae7ab67ecc37713-1" href="#rest_code_65893360e74e4d849ae7ab67ecc37713-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">distutils.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">setup</span>
-<a id="rest_code_65893360e74e4d849ae7ab67ecc37713-2" name="rest_code_65893360e74e4d849ae7ab67ecc37713-2" href="#rest_code_65893360e74e4d849ae7ab67ecc37713-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">py2exe</span>
-<a id="rest_code_65893360e74e4d849ae7ab67ecc37713-3" name="rest_code_65893360e74e4d849ae7ab67ecc37713-3" href="#rest_code_65893360e74e4d849ae7ab67ecc37713-3"></a>
-<a id="rest_code_65893360e74e4d849ae7ab67ecc37713-4" name="rest_code_65893360e74e4d849ae7ab67ecc37713-4" href="#rest_code_65893360e74e4d849ae7ab67ecc37713-4"></a><span class="n">setup</span><span class="p">(</span><span class="n">console</span><span class="o">=</span><span class="p">[</span><span class="s1">'hola.py'</span><span class="p">])</span>
+<div class="code"><pre class="code python"><a id="rest_code_29df5bb6783b427899ee74660f8b7212-1" name="rest_code_29df5bb6783b427899ee74660f8b7212-1" href="#rest_code_29df5bb6783b427899ee74660f8b7212-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">distutils.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">setup</span>
+<a id="rest_code_29df5bb6783b427899ee74660f8b7212-2" name="rest_code_29df5bb6783b427899ee74660f8b7212-2" href="#rest_code_29df5bb6783b427899ee74660f8b7212-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">py2exe</span>
+<a id="rest_code_29df5bb6783b427899ee74660f8b7212-3" name="rest_code_29df5bb6783b427899ee74660f8b7212-3" href="#rest_code_29df5bb6783b427899ee74660f8b7212-3"></a>
+<a id="rest_code_29df5bb6783b427899ee74660f8b7212-4" name="rest_code_29df5bb6783b427899ee74660f8b7212-4" href="#rest_code_29df5bb6783b427899ee74660f8b7212-4"></a><span class="n">setup</span><span class="p">(</span><span class="n">console</span><span class="o">=</span><span class="p">[</span><span class="s1">'hola.py'</span><span class="p">])</span>
 </pre></div>
 <p>Luego en la carpeta de la aplicación, por línea de comandos, ejecutamos este script:</p>
-<div class="code"><pre class="code console"><a id="rest_code_cc3690e8c7384b4ea439691f1499aeda-1" name="rest_code_cc3690e8c7384b4ea439691f1499aeda-1" href="#rest_code_cc3690e8c7384b4ea439691f1499aeda-1"></a><span class="go">python setup.py py2exe</span>
+<div class="code"><pre class="code console"><a id="rest_code_6190ee19ad4346f2a0c8ff9212c81f36-1" name="rest_code_6190ee19ad4346f2a0c8ff9212c81f36-1" href="#rest_code_6190ee19ad4346f2a0c8ff9212c81f36-1"></a><span class="go">python setup.py py2exe</span>
 </pre></div>
 <p>Con lo que se generará una carpeta <em>dist</em> con los siguientes archivos:</p>
 <ul class="simple">
@@ -131,7 +141,7 @@ Generar un archivo autoextraible similar a un instalador (pero más ">
 </section><section id="creando-un-instalador-simple-con-7-zip"><h2>Creando un instalador simple con 7-Zip</h2>
 <p>Con 7-zip se puede crear un único archivo comprimido autoextraible (ejecutable), con una muy buena tasa de compresión y de manera muy simple.</p>
 <p>Para ello, ejecutar 7-Zip en la linea de comandos sobre la carpeta de la aplicación:</p>
-<div class="code"><pre class="code console"><a id="rest_code_6cbba73293b646d8bc07e715d626c459-1" name="rest_code_6cbba73293b646d8bc07e715d626c459-1" href="#rest_code_6cbba73293b646d8bc07e715d626c459-1"></a><span class="go">7z.exe a -sfx setup.exe dist</span>
+<div class="code"><pre class="code console"><a id="rest_code_010c8a2b90ac4f11b2cf4b9dfb4bb30e-1" name="rest_code_010c8a2b90ac4f11b2cf4b9dfb4bb30e-1" href="#rest_code_010c8a2b90ac4f11b2cf4b9dfb4bb30e-1"></a><span class="go">7z.exe a -sfx setup.exe dist</span>
 </pre></div>
 <p>Con esto nos creará un archivo <em>setup.exe</em> que al ejecutarlo descomprimirá automáticamente la carpeta de nuestra aplicación. Este archivo contiene todo lo necesario para ejecutar la aplicación.</p>
 <p>Este ejemplo usa la línea de comando, pero también se puede usar la interfase visual integrada al explorador de windows de 7-Zip (click derecho sobre la carpeta <em>dist</em>, en el menú contextual elejir 7-zip, añadir al archivo, y tildar opción "Crear archivo SFX")</p>
@@ -162,6 +172,6 @@ Generar un archivo autoextraible similar a un instalador (pero más ">
         captions: function(element) {
             return element.getElementsByTagName('img')[0].alt;
     }});
-    </script>
+    </script><script src="https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.8.0/dist/flexsearch.bundle.min.js"></script><script src="../../assets/js/flexsearch.js"></script>
 </body>
 </html>

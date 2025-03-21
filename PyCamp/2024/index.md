@@ -1,6 +1,4 @@
-.. title: PyCamp 2024
-
-### ¿Un qué?
+.. title: ¿Un qué?
 
 Antes que nada, ¿qué es un PyCamp? [Acá tenés una buena descripción y mucha info](link://post_path/PyCamp/).
 

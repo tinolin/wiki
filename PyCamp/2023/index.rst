@@ -1,8 +1,5 @@
 
-.. title: PyCamp 2023
-
-¿Un qué?
---------
+.. title: ¿Un qué?
 
   
   
