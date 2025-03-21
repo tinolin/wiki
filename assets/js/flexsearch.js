@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Fetch the generated JSON file
     const basePath = "" //document.location.hostname == "localhost" ? "": "/wiki" //Parche para probar en las GHP de mi fork ak.saxa.xyz/wiki
-    var indexPath = document.location.origin + basePath + "/search_index.json"
+    // var indexPath = document.location.origin + basePath + "/search_index.json"
+    var indexPath = window.location.href + "/search_index.json"
+
     fetch(indexPath)
     .then(response => response.json())
     .then(data => {
