@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     get_basePath()
     console.log(basePath)
-    console.log(indexPath)
     console.log(this.baseURI)
     var indexPath = "/assets/search_index.json";
+    console.log(indexPath)
 
 
     fetch(indexPath)
