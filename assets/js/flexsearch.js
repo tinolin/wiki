@@ -1,7 +1,10 @@
 // Basado en https://plugins.getnikola.com/#flexsearch_plugin
-pyar_wiki_host = true
+
 
 document.addEventListener('DOMContentLoaded', function() {
+
+    const wiki_host_for_dev_or_prod = ['127.0.0.1', 'localhost', '0.0.0.0', 'wiki.python.org.ar'];
+
     var searchIndex = new FlexSearch.Index({ 
         tokenize: "full",
         async: true,
@@ -11,16 +14,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // Fetch the generated JSON file
     function get_basePath() {
         // evalua si el url.host NO es igual a wiki.python.org.ar para setear el basepath de los links
-        if ( !window.location.host === "wiki.python.org.ar") {
-            return basePath = window.location.href + "assets/search_index.json";
-        } else {
+        if (wiki_host_for_dev_or_prod.includes(window.location.hostname)) {
             return basePath = ""
+        } else {
+            // asumimos que el wiki esta alojado bajo /wiki por la relación de las github_pages
+            return basePath = window.location.host + "/wiki";
         } 
     };
     
     get_basePath()
 
-    var indexPath = "assets/search_index.json";
+    var indexPath = "/assets/search_index.json";
 
     fetch(indexPath)
     .then(response => response.json())
