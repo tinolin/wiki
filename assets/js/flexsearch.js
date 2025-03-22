@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         results.forEach(function(result) {
             var li = document.createElement('li'); // Create a LI element for each result
             var link = document.createElement('a');
-            link.href = `//${basePath}/${index[result].url}`;   
+            link.href = `//${basePath}${index[result].url}`;   
             link.textContent = index[result].title;
             li.appendChild(link);
             ul.appendChild(li); // Append the LI to the UL
