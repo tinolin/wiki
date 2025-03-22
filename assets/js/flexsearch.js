@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function get_basePath() {
         // evalua si el url.host NO es igual a wiki.python.org.ar para setear el basepath de los links
         if (wiki_host_for_dev_or_prod.includes(window.location.hostname)) {
-            return basePath = ""
+            return basePath = window.location.host
         } else {
             // asumimos que el wiki esta alojado bajo /wiki por la relación de las github_pages
             return basePath = window.location.host + "/wiki";
@@ -23,11 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     
     get_basePath()
-    console.log(basePath)
-    console.log(this.baseURI)
     var indexPath = `//${basePath}/assets/search_index.json`;
-    console.log(indexPath)
-
 
     fetch(indexPath)
     .then(response => response.json())
@@ -64,9 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         results.forEach(function(result) {
             var li = document.createElement('li'); // Create a LI element for each result
             var link = document.createElement('a');
-            // link.href = basePath + index[result].url;
             link.href = `//${basePath}/${index[result].url}`;   
-            console.log(index[result].url);
             link.textContent = index[result].title;
             li.appendChild(link);
             ul.appendChild(li); // Append the LI to the UL
